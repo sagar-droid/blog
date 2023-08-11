@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.footer-container{
+    height: 464px;
+    flex-shrink: 0;
+    background: #000;
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between ;
+}
+.footer-item:nth-child(odd){
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    padding-right: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px; /* 140% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.footer-item:nth-child(even){
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 400;
+font-style: normal;
+line-height: 28px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.footer-logo{
+    fill: #FFF;
+    width: 100%;
+height: 27.296px;
+flex-shrink: 0;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-top: 105.12px;
+}
+.footer-para{
+    display: flex;
+    justify-content: center;
+}
+.footer-container p{
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+text-align: center;
+align-items: center;
+margin-right: 0;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+width: 488px;
+height: 71px;
+}
+.links{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+   
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 170%; /* 27.2px */
+text-decoration-line: underline;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+   
+}
+.links li{
+    padding: 27px;
+}
+.copyright{
+    color: #FFF;
+text-align: center;
+font-family: SF Pro Text;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 16.8px */
+}

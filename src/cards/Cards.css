@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.card-list{
+    width: 304px;
+flex-shrink: 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+text-align: center;
+gap: 28px;
+justify-content: center;
+}
+.card-container h2{
+    color: #000;
+text-align: center;
+font-family: New York Extra Large;
+font-size: 44px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.card p{
+    font-family: 'Inter', sans-serif;
+}
+.card-container{
+    max-height: 2000px;
+    height: 100%;
+}
