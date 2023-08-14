@@ -8,6 +8,10 @@ text-align: center;
 gap: 28px;
 justify-content: center;
 }
+.card-link{
+    text-decoration: none;
+    color: black;
+}
 .card-container h2{
     color: #000;
 text-align: center;
@@ -21,6 +25,17 @@ line-height: normal;
     font-family: 'Inter', sans-serif;
 }
 .card-container{
-    max-height: 2000px;
     height: 100%;
+}
+@media (max-width: 860px) {
+    .card-list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px; 
+    }
+    
+  }
+@media(max-width:321px){
+    .card-container h2{
+        font-size: 32px;
+    }
 }

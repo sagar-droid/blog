@@ -50,6 +50,7 @@ text-transform: uppercase;
       display: block;
       cursor: pointer;
       padding: 10px;
+      padding-right: 63px;
     }
   
     .bar {
@@ -59,7 +60,7 @@ text-transform: uppercase;
       margin: 6px 0;
       transition: 0.4s;
     }
-  
+/*   
     .menu.expanded .bar:nth-child(1) {
       transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -71,24 +72,30 @@ text-transform: uppercase;
     .menu.expanded .bar:nth-child(3) {
       transform: rotate(45deg) translate(-5px, -6px);
     }
-  
+   */
     .nav-links {
       position: absolute;
-      top: 100%;
-      left: 0;
+      top: 207%;
+      /* left: 0; */
+      right: 55%;
       background-color: #fff;
       width: 100%;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
       display: none;
+      flex-direction: column;
+      align-items: center;
     }
   
     .menu.expanded .nav-links {
       display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
     }
   
     .nav-links ul {
       list-style: none;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
       padding: 0;
       margin: 0;
     }
@@ -97,5 +104,17 @@ text-transform: uppercase;
       padding: 15px;
       text-align: center;
       border-bottom: 1px solid #ccc;
+    }
+  }
+  @media(max-screen:860px){
+    .nordic-logo{
+      width: 50px; 
+      height: auto; 
+    }
+  }
+  @media(max-width:321px){
+    .navbar-container .nordic-logo{
+      margin-right: 80px;
+      width: 50%;
     }
   }

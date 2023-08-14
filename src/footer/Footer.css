@@ -88,3 +88,29 @@ font-style: normal;
 font-weight: 500;
 line-height: 140%; /* 16.8px */
 }
+@media(max-width:356px){
+    .links ul li{
+        width: 10%;
+        font-size: 16px;
+    }
+}
+@media(max-width:321px){
+    .footer-list{
+        font-size: 16px;
+    }
+    .footer-logo{
+        width: 236.368px;
+height: 22.178px;
+padding-bottom: 25.5px;
+margin-left: 20px;
+    }
+    .footer-para{
+        font-size: 13px;
+    }
+   .links ul li{
+    display: flex;
+    width: 20%;
+    font-size: 13px;
+    padding-left: 0;
+   }
+}

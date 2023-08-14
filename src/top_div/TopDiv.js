@@ -1,7 +1,7 @@
 import React from "react";
 import "./TopDiv.css";
 import Img1 from "../assets/image 2.jpg";
-import CardList from "../cards/Cards";
+// import CardList from "../cards/Cards";
 
 const TopDiv = () => {
   return (
@@ -18,7 +18,7 @@ const TopDiv = () => {
         WordPress or other options?
       </p>
       <div className="line"></div>
-      <CardList />
+      {/* <CardList /> */}
     </div>
   );
 };

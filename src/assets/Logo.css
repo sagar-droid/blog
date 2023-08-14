@@ -1,6 +1,13 @@
 .logo{
-    width: 395.831px;
+    max-width: 395.831px;
+    width: 100%;
 height: 37.532px;
 flex-shrink: 0;
 fill: #000;
 }
+@media(max-width:321px){
+    .logo{
+      /* margin-right: 80px; */
+      width: 160%;
+    }
+  }

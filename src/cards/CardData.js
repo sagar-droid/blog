@@ -15,6 +15,8 @@ const CardData = [
   {
     id: 1,
     title: "Card 1",
+    name: "Sagar Adhikari",
+    date: "Apr 15, 2020 · 4 min read",
     content: "Here are some things you should know regarding how we work ",
     imageUrl: card1,
   },
