@@ -1,32 +1,26 @@
 import "./App.css";
-import Navbar from "./navbar/Navbar";
-import TopDiv from "./top_div/TopDiv";
-import Footer from "./footer/Footer";
-import Articles from "./articles/Articles";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import CardDetails from "./card_details/CardDetails";
-function App() {
+import { useSelector } from "react-redux";
+import SignIn from "./signin/SignIn";
+import Home from "./Home";
+
+const App = () => {
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+
+  if (!isAuthenticated)
+    return (
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+      </Routes>
+    );
+
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={
-              <>
-                <TopDiv />
-                <Articles />
-              </>
-            }
-          />
-          <Route path="/card/:index" element={<CardDetails />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </>
+    <Routes>
+      <Route path="/home" element={<Home />} />
+      <Route path="/card/:index" element={<CardDetails />} />
+    </Routes>
   );
-}
+};
 
 export default App;
